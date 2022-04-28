@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Somatório</title>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" type="text/css" href="estilo.css"> 
+    </head>
+
+    <body>
+        <a href="index.html">
+            VOLTAR
+        </a>
+        <script>
+            let quantidade = parseInt(prompt("quantos números você deseja somar?"));
+            let soma = 0;
+            let i = 0;
+  
+            while(i<quantidade){
+  
+              let numero = parseInt(prompt("Digite o "+(i+1)+"º número:"));
+              soma = soma + numero;
+              i++
+            }
+            document.write("O somatótio dos "+i+" números é: "+soma);
+            
+          </script>
+    </body>
+</html>

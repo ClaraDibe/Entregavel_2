@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Contagem</title>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" type="text/css" href="estilo.css"> 
+    </head>
+
+    <body>
+        <div>
+            <a href="index.html">
+                VOLTAR
+            </a>
+        </div>
+        <div>
+            <script>
+                let quantNotas = parseInt(prompt("Informe a quantidade de notas:"));
+                if( quantNotas == 2) debugger;
+                let nota = 0;
+                let cont = 0;
+                let i = 0;
+    
+                while (i < quantNotas) {
+                    nota = parseInt(prompt("Informe a "+(i+1)+"ª nota (de zero a dez)"));
+    
+                    if (nota >= 5) {
+                        cont++;
+                    }
+                    
+                    i++;
+                }
+    
+                document.write("<h2>Alunos aprovados: </h2>" + cont);   
+                </script>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Fibonacci</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="estilo.css"> 
+    </head>
+
+    <body>
+        <a href="index.html">
+            VOLTAR
+        </a>
+        <script>
+
+            let fibo = parseInt(prompt("Quantos números você deseja ver na sequencia?"));
+
+            let termo1 = 0;
+            let termo2 = 1;
+            let soma;
+
+            document.write(termo1+", "+termo2);
+            for (let i = 2; i<fibo; i++){
+
+                soma = termo1 + termo2;
+                termo1 = termo2;
+                termo2 = soma;
+
+                document.write(", "+soma);
+            }
+        </script>
+    </body>
+</html>

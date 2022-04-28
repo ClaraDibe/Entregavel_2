@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Somatório</title>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" type="text/css" href="estilo.css"> 
+    </head>
+
+    <body>
+        <a href="index.html">
+            VOLTAR
+        </a>
+        <script>
+            let num1 = prompt("Digite o primeiro número:");
+            let num2 = prompt("Digite o segundo número:");
+            let aux;
+
+            document.write (num1,"-",num2, '<br>');
+
+            function troca (num1, num2, aux){
+                aux = num1;
+                num1 = num2;
+                num2 = aux;
+                document.write (num1,"-",num2,'<br/>');
+            }
+
+            troca(num1,num2,aux);              
+        </script>
+    </body>
+</html>
